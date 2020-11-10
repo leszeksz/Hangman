@@ -41,7 +41,6 @@
         <Compile Include="cell.cs" />
         <Compile Include="Game.cs" />
         <Compile Include="HangmanTable.cs" />
-        <Compile Include="Highscore.cs" />
         <Compile Include="IWordable.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,7 +51,6 @@
     </ItemGroup>
     <ItemGroup>
       <Content Include="countries_and_capitals.txt" />
-      <Content Include="Highscores" />
       <Content Include="title_long.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -18,7 +18,7 @@ namespace Hangman {
     public Game(string word) {
       Word = word;
       GuessedLetters = new List<char>();
-      Status = "Press any letter to guess!";
+      Status = "Press any letter to guess the capital!";
       GameState = Playing;
     }
 
@@ -103,6 +103,4 @@ namespace Hangman {
       return Word.Contains(letter.ToString());
     }
   }
-  
-  
 }

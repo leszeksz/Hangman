@@ -36,7 +36,7 @@ namespace Hangman {
         char key = Console.ReadKey(true).KeyChar;
         game.GuessLetter(Char.ToUpper(key));
       }
-      // After the game
+      
       Console.Clear();
       Console.WriteLine(game.Status);
       Console.WriteLine("The word was \"{0}\".", word);
