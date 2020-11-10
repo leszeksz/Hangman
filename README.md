@@ -5,6 +5,7 @@ When you guess the correct letter of the word, it will appear on console and the
 If you don't guess it you'll lost one of your five life's.
 When you guess all letters  - you win - but if you lost your last life - you lose.
 There should be more methods like highscores, hints etc, but unfortunately it's too hard to me to do that in expected time for today.
+I wrote a small algorithm with all functions program should have.
 
 
 
