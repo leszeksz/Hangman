@@ -1,0 +1,6 @@
+/home/leszek/RiderProjects/Hangman/Hangman/bin/Debug/Hangman.exe
+/home/leszek/RiderProjects/Hangman/Hangman/bin/Debug/Hangman.pdb
+/home/leszek/RiderProjects/Hangman/Hangman/obj/Debug/Hangman.csprojAssemblyReference.cache
+/home/leszek/RiderProjects/Hangman/Hangman/obj/Debug/Hangman.csproj.CoreCompileInputs.cache
+/home/leszek/RiderProjects/Hangman/Hangman/obj/Debug/Hangman.exe
+/home/leszek/RiderProjects/Hangman/Hangman/obj/Debug/Hangman.pdb
