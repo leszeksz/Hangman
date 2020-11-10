@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace Hangman {
     public class Hangman {
@@ -8,11 +9,37 @@ namespace Hangman {
             var game = new Game(word);
             var width = Math.Min(81, Console.WindowWidth);
             
-            char key = Console.ReadKey(true).KeyChar;
-                game.GuessLetter(Char.ToUpper(key));
-                
-                Console.Write(key);
-                Console.Write(word);
+            string titleText;
+            int spacing;
+      if (width >= 81) {
+        titleText = File.ReadAllText("title_long.txt");
+        spacing = 2;
+      
+      } else {
+        titleText = "Hangman";
+        spacing = 1;
+      }
+
+      while (game.IsPlaying()) {
+        var table = HangmanTable.Build(
+          word,
+          titleText,
+          game,
+          width,
+          spacing
+        );
+
+        var tableOutput = table.Draw();
+        Console.Clear();
+        Console.WriteLine(tableOutput);
+
+        char key = Console.ReadKey(true).KeyChar;
+        game.GuessLetter(Char.ToUpper(key));
+      }
+      // After the game
+      Console.Clear();
+      Console.WriteLine(game.Status);
+      Console.WriteLine("The word was \"{0}\".", word);
 
         }
     }

@@ -38,16 +38,22 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="cell.cs" />
         <Compile Include="Game.cs" />
+        <Compile Include="HangmanTable.cs" />
         <Compile Include="Highscore.cs" />
         <Compile Include="IWordable.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="RandomWord.cs" />
+        <Compile Include="row.cs" />
+        <Compile Include="table.cs" />
+        <Compile Include="TableFactory.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="countries_and_capitals.txt" />
-      <Content Include="Highscores.txt" />
+      <Content Include="Highscores" />
+      <Content Include="title_long.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
