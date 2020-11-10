@@ -16,7 +16,7 @@ namespace Hangman {
         }
 
         private string RawWords() {
-            return File.ReadAllText("countries_and_capitals.txt").TrimEnd(Environment.NewLine.ToCharArray());
+            return File.ReadAllText("countries_and_capitals.txt").Split(' ')[2].TrimEnd(Environment.NewLine.ToCharArray());
         }
     }
 }
